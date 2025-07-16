@@ -2,7 +2,7 @@
 document.querySelectorAll('.ramo').forEach(ramo => {
   // Agrega un evento al hacer clic
   ramo.addEventListener('click', () => {
-    // Si el ramo no está bloqueado por prerequisito
+    // Si el ramo no está bloqueado por prerrequisito
     if (!ramo.classList.contains('locked')) {
       // Cambia el estado a aprobado o no aprobado
       ramo.classList.toggle('aprobado');
@@ -26,4 +26,3 @@ function verificarPrerequisitos() {
     }
   });
 }
-
