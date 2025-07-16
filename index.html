@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva Agronomía</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Interactiva - Agronomía PUCV</h1>
+  <div class="grid">
+    <div class="semestre">
+      <h2>Semestre 1</h2>
+      <div class="ramo" data-code="AGR142">Introducción a la Agronomía</div>
+      <div class="ramo" data-code="QUI134">Química General</div>
+      <div class="ramo" data-code="MAT140">Álgebra 1</div>
+      <div class="ramo" data-code="BIO239">Biología Celular</div>
+    </div>
+    <div class="semestre">
+      <h2>Semestre 2</h2>
+      <div class="ramo locked" data-code="QUI196" data-prereq="QUI134">Química Orgánica</div>
+      <div class="ramo locked" data-code="MAT154" data-prereq="MAT140">Álgebra 2</div>
+      <div class="ramo" data-code="AGR164">Sistemas Productivos</div>
+      <div class="ramo" data-code="BIO1110">Zoología</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
