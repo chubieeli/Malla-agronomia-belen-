@@ -1,0 +1,42 @@
+body {
+  font-family: Arial;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.semestre {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #aaa;
+  min-width: 220px;
+}
+
+.ramo {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f8c6dc; /* Rosado */
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.ramo.aprobado {
+  background: #add8e6; /* Azul claro */
+  color: black;
+  text-decoration: line-through;
+}
+
+.ramo.locked {
+  background: #fff3b0; /* Amarillo */
+  color: #666;
+  pointer-events: none;
+}
